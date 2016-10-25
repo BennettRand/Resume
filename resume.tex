@@ -165,14 +165,22 @@ The purpose is to simplify the manipulation of physical quantities and ensure in
 \section{Experience}
 
 \runsubsection{SolarCity}
-\descript{| Firmware Engineer}
+\descript{| Embedded Software Engineer}
 
 \location{Fall 2014 - August 2016 | San Mateo, CA}
-I wrote Python firmware for SolarCity's commercial and residential gateways that connected mesh networks of up to seventy devices to the internet.
-This allows SolarCity to monitor customers' power usage in real time as well as control batteries and solar generation.
-Devices could be communicated with using ZigBee, Ethernet, or RS485 (on the commercial gateways.)
+I maintained and added new features to a Python application that ran on small, Linux-powered, embedded devices.
+The application communicated to various power appliances in order to send power data samples back to a database and a realtime messaging system.
+It also controlled various settings on the appliance when commanded over the realtime messaging system.\\
+I also spearheaded the effort to get the Python application's build process off of developers' computers and into continuous integration with unit testing
+as well as move away from using a SQL-based logging system to using a third-party log management stack.
+\sectionspace
 
-I also interviewed candidates who would be placed in roles similar to mine.
+Technology Used:\\
+\begin{tabular}{lll}
+ZigBee (802.15.4) & TCP/IP & MODBUS\\
+Websockets & RabbitMQ & Cassandra \\
+MSSQL & Jenkins CI & ELK\\
+\end{tabular}
 
 \sectionspace % Some whitespace after the section
 
@@ -195,13 +203,13 @@ I ran lab sections, graded exams, held office hours, held assignment demonstrati
 
 %------------------------------------------------
 
-\runsubsection{The Athenian School}
-\descript{| Summer Camp Instructor}
+%\runsubsection{The Athenian School}
+%\descript{| Summer Camp Instructor}
 
-\location{Summer 2011 | Danville, CA}
-I taught a Lego robotics course to elementary school children. I designed the course and created the syllabus and lab exercises. We provided hands-on experience with both Lego Mindstorms NXT and RCX, programmed in RoboLab (based upon NI LabView). After starting with basic mechanism design, we finished with a challenge of a line-following maze.
+%\location{Summer 2011 | Danville, CA}
+%I taught a Lego robotics course to elementary school children. I designed the course and created the syllabus and lab exercises. We provided hands-on experience with both Lego Mindstorms NXT and RCX, programmed in RoboLab (based upon NI LabView). After starting with basic mechanism design, we finished with a challenge of a line-following maze.
 
-\sectionspace % Some whitespace after the section
+%\sectionspace % Some whitespace after the section
 
 %------------------------------------------------
 % Awards
