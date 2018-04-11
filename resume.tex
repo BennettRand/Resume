@@ -30,7 +30,7 @@
 \lastupdated % Print the Last Updated text at the top right
 
 \namesection{Bennett}{Rand}{ % Your name
-\urlstyle{same}\url{http://bennett-rand.com/} \\ % Your website, LinkedIn profile or other web address
+\urlstyle{same}\url{http://bennett-rand.com} \\ % Your website, LinkedIn profile or other web address
 \href{mailto:bennett.h.rand@gmail.com}{bennett.h.rand@gmail.com} | (925)336-0995 % Your contact information
 }
 
@@ -76,17 +76,17 @@ LinkedIn:// \href{https://www.linkedin.com/pub/bennett-rand/51/76a/679}{\bf Benn
 
 \section{Coursework}
 
-\subsection{Undergraduate}
+%\subsection{Undergraduate}
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
 
 \begin{tightitemize}
-\item Computer Arch. and Assembly Lang.
+\item Computer Arch and Assembly Lang
 \item Operating Systems I \& II
 \item Software Engineering I \& II
 \item ST/ HCI Research Methods
 \item Digital Logic Design
 \item Intro to Usability Engineering
-\item Computer Org. \& Assembly Lang.
+\item Computer Org \& Assembly Lang
 \item Intro Artificial Intelligence
 \item ST/ Intro to Info Visualization
 \item Computer Architecture
@@ -94,7 +94,7 @@ LinkedIn:// \href{https://www.linkedin.com/pub/bennett-rand/51/76a/679}{\bf Benn
 \item Machine Learning \& Data Mining
 \item Intro to Parallel Computing
 \item Network Security
-\item Mobile/Cloud Software Development
+\item Mobile/Cloud Development
 \end{tightitemize}
 
 \sectionspace % Some whitespace after the section
@@ -108,18 +108,18 @@ LinkedIn:// \href{https://www.linkedin.com/pub/bennett-rand/51/76a/679}{\bf Benn
 \subsection{Languages}
 
 \location{Strong:}
-Python \textbullet{} C \textbullet{} C++ \textbullet{} JavaScript\\
-Assembly (AVR, x86, ARM v6) \textbullet{} SQL\\
-HTML \textbullet{} CSS\\
+Python \textbullet{} Go \textbullet{} C \textbullet{} C++\\
+JavaScript \textbullet{} SQL \textbullet{} HTML \& CSS\\
 \location{Familiar:}
-C\# \textbullet{} PHP \textbullet{} Java \textbullet{} Go
+Assembly (AVR, x86, ARM v6)\\
+C\# \textbullet{} Java \textbullet{} PHP \\
 
 \subsection{Other}
-MySQL \textbullet{} PostgreSQL \textbullet{} Python NDB\\
-Microsoft .NET \textbullet{} Google App Engine\\
-Windows \textbullet{} Linux \textbullet{} Solaris\\
-802.15.4 \textbullet{} WebSockets \textbullet{} Cassandra\\
-
+AWS \textbullet{} Ansible \textbullet{} Cassandra \textbullet{} Consul \\
+Django \textbullet{} ELK \textbullet{} Flask \textbullet{} Git \textbullet{} Jenkins CI \\
+Linux \textbullet{} Mesh Networking \textbullet{} MySQL \\
+PostgreSQL \textbullet{} Protocol Buffers \textbullet{} Redis \\
+Solaris \textbullet{} WebSockets \textbullet{} Windows
 
 \sectionspace % Some whitespace after the section
 
@@ -134,6 +134,110 @@ Windows \textbullet{} Linux \textbullet{} Solaris\\
 %
 \begin{minipage}[t]{0.66\textwidth} % The right column takes up 66% of the text width of the page
 
+%----------
+%Interests
+%----------
+
+\section{About}
+I am a software engineer specializing in writing efficient Python and Go for low-level embedded environments and scalable backend systems.
+I have experience with AWS, microservices, Internet of Things, wireless sensor networks, and green energy.\\[1em]
+I am happiest building things that other people enjoy using, especially when it aligns with my other hobbies.
+\sectionspace
+
+%------------------------------------------------
+% Experience
+%------------------------------------------------
+
+\section{Experience}
+
+\runsubsection{Ditto.com}
+\descript{| Backend Software Engineer}
+
+\location{January 2017 - Current | San Francisco, CA}
+I support and implement a cloud-based 3D-rendering and face-scanning service on AWS. The service provides "Virtual Try-Ons" to eyewear e-commerce businesses.\\[1em]
+My responsibilities include designing and implementing databases and APIs, diagnosing and improving performance, working with DevOps to deploy products at scale, creating internal and customer-facing tools, mentoring new employees, and participating in the on-call cycle.\\[1em]
+Recently I helped lead a team in designing the architecture and implementing a horizontally scalable, distributed image and video processing system on AWS.
+Some challenges were real-time scaling based upon current demand, reloading configuration without downtime, monitoring, synchronizing states between nodes, and formatting easily searchable logs.
+All components in the new system have been well documented and diagrammed to allow future and current developers to easily take part in any further development of the system.
+\sectionspace
+
+Technology Used:\\
+\begin{tabular}{llll}
+AWS & Django & PostgreSQL & S3\\
+Ansible & Flask & Protocol Buffers & SQS\\
+Consul & OpenCV & Redis & Twisted\\
+\end{tabular}
+
+\sectionspace % Some whitespace after the section
+
+%---------------------------------------------------
+
+\runsubsection{SolarCity}
+\descript{| Embedded Software Engineer}
+
+\location{September 2014 - August 2016 | San Mateo, CA}
+
+I maintained and added new features to a Python application that ran on small, Linux-powered, embedded devices.
+The application communicated to various power appliances in order to send power data samples back to a database and a real-time messaging system.
+It also controlled various settings on the appliance when commanded over the real-time messaging system.\\[1em]
+I also spearheaded the effort to get the Python application's build process off of developers' computers and into continuous integration with unit testing,
+as well as move away from using a SQL-based logging system to using a third-party log management stack.
+\sectionspace
+
+Technology Used:\\
+\begin{tabular}{llll}
+Cassandra & Git & MSSQL & TCP/IP\\
+ELK & Jenkins CI & RS-485 & WebSockets\\
+Flask & MODBUS & RabbitMQ & ZigBee (802.15.4)\\
+\end{tabular}
+
+\sectionspace % Some whitespace after the section
+
+%---------------------------------------------------
+
+% \runsubsection{Oregon State University EECS}
+% \descript{| Undergraduate TA}
+
+% \location{Spring 2012 – Spring 2014 | Corvallis, OR}
+% I ran lab sections, graded exams, held office hours, held assignment demonstrations, and graded assignments for multiple classes.
+% \vspace{\topsep} % Hacky fix for awkward extra vertical space
+% \begin{tightitemize}
+% \item Operating Systems II (1 Quarter): Mr. D. Kevin McGrath
+% \item Computer Arch. and Assembly Language (1 Quarter): Mr. D. Kevin McGrath
+% \item Operating Systems I (3 Quarters): Mr. D. Kevin McGrath
+% \item Intro to Computer Science II (6 Quarters): Mr. Donald Heer, Mr. D. Kevin McGrath, Dr. Jennifer Parham-Mocello, and  Dr. Weng-Keen Wong
+% \end{tightitemize}
+
+% \sectionspace % Some whitespace after the section
+
+%------------------------------------------------
+
+%\runsubsection{The Athenian School}
+%\descript{| Summer Camp Instructor}
+
+%\location{Summer 2011 | Danville, CA}
+%I taught a Lego robotics course to elementary school children. I designed the course and created the syllabus and lab exercises. We provided hands-on experience with both Lego Mindstorms NXT and RCX, programmed in RoboLab (based upon NI LabView). After starting with basic mechanism design, we finished with a challenge of a line-following maze.
+
+%\sectionspace % Some whitespace after the section
+
+\hfill \location{Continued on next page.}
+
+\end{minipage} % The end of the right column
+
+%----------------------------------------------------------------------------------------
+%	SECOND PAGE (EXAMPLE)
+%----------------------------------------------------------------------------------------
+
+\newpage % Start a new page
+
+%\begin{minipage}[t]{0.33\textwidth} % The left column takes up 33% of the text width of the page
+
+%\section{Example Section}
+
+%\end{minipage} % The end of the left column
+%\hfill
+\begin{minipage}[t]{0.99\textwidth} % The right column takes up 66% of the text width of the page
+
 %------------------------------------------------
 % Projects
 %------------------------------------------------
@@ -146,9 +250,10 @@ Windows \textbullet{} Linux \textbullet{} Solaris\\
 \location{Fall 2013 - Spring 2014 | \href{http://goo.gl/PqPYvQ}{http://goo.gl/PqPYvQ}}
 Designed and built a mesh network of power monitors to measure home power usage patterns and help people conserve energy.
 
+\sectionspace % Some whitespace after the section
+
 %------------------------------------------------
 
-\sectionspace % Some whitespace after the section
 \runsubsection{Samplify}
 \descript{| A Python Library for Physical Measurements}
 
@@ -159,57 +264,14 @@ The purpose is to simplify the manipulation of physical quantities and ensure in
 \sectionspace % Some whitespace after the section
 
 %------------------------------------------------
-% Experience
-%------------------------------------------------
 
-\section{Experience}
+\runsubsection{Cause and Affect Microdonations}
+\descript{| Easy Socal Non-Profit Donations}
 
-\runsubsection{SolarCity}
-\descript{| Embedded Software Engineer}
-
-\location{September 2014 - August 2016 | San Mateo, CA}
-I maintained and added new features to a Python application that ran on small, Linux-powered, embedded devices.
-The application communicated to various power appliances in order to send power data samples back to a database and a realtime messaging system.
-It also controlled various settings on the appliance when commanded over the realtime messaging system.\\
-I also spearheaded the effort to get the Python application's build process off of developers' computers and into continuous integration with unit testing
-as well as move away from using a SQL-based logging system to using a third-party log management stack.
-\sectionspace
-
-Technology Used:\\
-\begin{tabular}{llll}
-ZigBee (802.15.4) & TCP/IP & MODBUS & RS-485\\
-Websockets & RabbitMQ & Cassandra & Flask\\
-MSSQL & Jenkins CI & ELK & Git\\
-\end{tabular}
+\location{March 2017 | \href{https://causeandaffect.net/}{https://causeandaffect.net/}}
+A donation platform built on AWS to facilitate non-profit fundraising within the Twitch livestreaming ecosystem.
 
 \sectionspace % Some whitespace after the section
-
-%---------------------------------------------------
-
-\runsubsection{Oregon State University EECS}
-\descript{| Undergraduate TA}
-
-\location{Spring 2012 – Spring 2014 | Corvallis, OR}
-I ran lab sections, graded exams, held office hours, held assignment demonstrations, and graded assignments for multiple classes.
-\vspace{\topsep} % Hacky fix for awkward extra vertical space
-\begin{tightitemize}
-\item Operating Systems II (1 Quarter): Mr. D. Kevin McGrath
-\item Computer Arch. and Assembly Language (1 Quarter): Mr. D. Kevin McGrath
-\item Operating Systems I (3 Quarters): Mr. D. Kevin McGrath
-\item Intro to Computer Science II (6 Quarters): Mr. Donald Heer, Mr. D. Kevin McGrath, Dr. Jennifer Parham-Mocello, and  Dr. Weng-Keen Wong
-\end{tightitemize}
-
-\sectionspace % Some whitespace after the section
-
-%------------------------------------------------
-
-%\runsubsection{The Athenian School}
-%\descript{| Summer Camp Instructor}
-
-%\location{Summer 2011 | Danville, CA}
-%I taught a Lego robotics course to elementary school children. I designed the course and created the syllabus and lab exercises. We provided hands-on experience with both Lego Mindstorms NXT and RCX, programmed in RoboLab (based upon NI LabView). After starting with basic mechanism design, we finished with a challenge of a line-following maze.
-
-%\sectionspace % Some whitespace after the section
 
 %------------------------------------------------
 % Awards
@@ -228,25 +290,9 @@ I ran lab sections, graded exams, held office hours, held assignment demonstrati
 
 \section{References available upon request.}
 
-\end{minipage} % The end of the right column
-
-%----------------------------------------------------------------------------------------
-%	SECOND PAGE (EXAMPLE)
-%----------------------------------------------------------------------------------------
-
-%\newpage % Start a new page
-
-%\begin{minipage}[t]{0.33\textwidth} % The left column takes up 33% of the text width of the page
-
-%\section{Example Section}
-
-%\end{minipage} % The end of the left column
-%\hfill
-%\begin{minipage}[t]{0.66\textwidth} % The right column takes up 66% of the text width of the page
-
 %\section{Example Section 2}
 
-%\end{minipage} % The end of the right column
+\end{minipage} % The end of the right column
 
 %----------------------------------------------------------------------------------------
 
