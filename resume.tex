@@ -40,6 +40,16 @@
 
 \begin{minipage}[t]{0.33\textwidth} % The left column takes up 33% of the text width of the page
 
+%----------
+%Interests
+%----------
+
+\section{About}
+I am a software engineer specializing in writing efficient Python and Go for low-level embedded environments and scalable backend systems.
+I have experience with AWS, microservices, Internet of Things, wireless sensor networks, and green energy.\\[1em]
+I am happiest building things that other people enjoy using, especially when it aligns with my other hobbies.
+\sectionspace
+
 %------------------------------------------------
 % Education
 %------------------------------------------------
@@ -74,30 +84,30 @@ LinkedIn:// \href{https://www.linkedin.com/pub/bennett-rand/51/76a/679}{\bf Benn
 % Coursework
 %------------------------------------------------
 
-\section{Coursework}
+%\section{Coursework}
 
 %\subsection{Undergraduate}
-\vspace{\topsep} % Hacky fix for awkward extra vertical space
+%\vspace{\topsep} % Hacky fix for awkward extra vertical space
 
-\begin{tightitemize}
-\item Computer Arch and Assembly Lang
-\item Operating Systems I \& II
-\item Software Engineering I \& II
-\item ST/ HCI Research Methods
-\item Digital Logic Design
-\item Intro to Usability Engineering
-\item Computer Org \& Assembly Lang
-\item Intro Artificial Intelligence
-\item ST/ Intro to Info Visualization
-\item Computer Architecture
-\item Applied Robotics
-\item Machine Learning \& Data Mining
-\item Intro to Parallel Computing
-\item Network Security
-\item Mobile/Cloud Development
-\end{tightitemize}
-
-\sectionspace % Some whitespace after the section
+%\begin{tightitemize}
+%\item Computer Arch and Assembly Lang
+%\item Operating Systems I \& II
+%\item Software Engineering I \& II
+%\item ST/ HCI Research Methods
+%\item Digital Logic Design
+%\item Intro to Usability Engineering
+%\item Computer Org \& Assembly Lang
+%\item Intro Artificial Intelligence
+%\item ST/ Intro to Info Visualization
+%\item Computer Architecture
+%\item Applied Robotics
+%\item Machine Learning \& Data Mining
+%\item Intro to Parallel Computing
+%\item Network Security
+%\item Mobile/Cloud Development
+%\end{tightitemize}
+%
+%\sectionspace % Some whitespace after the section
 
 %------------------------------------------------
 % Skills
@@ -108,18 +118,17 @@ LinkedIn:// \href{https://www.linkedin.com/pub/bennett-rand/51/76a/679}{\bf Benn
 \subsection{Languages}
 
 \location{Strong:}
-Python \textbullet{} Go \textbullet{} C \textbullet{} C++\\
-JavaScript \textbullet{} SQL \textbullet{} HTML \& CSS\\
+Python \textbullet{} SQL \textbullet{} C \textbullet{} C++\\
+Go \textbullet{} JavaScript/TypeScript\\
 \location{Familiar:}
 Assembly (AVR, x86, ARM v6)\\
 C\# \textbullet{} Java \textbullet{} PHP \\
 
 \subsection{Other}
-AWS \textbullet{} Ansible \textbullet{} Cassandra \textbullet{} Consul \\
-Django \textbullet{} ELK \textbullet{} Flask \textbullet{} Git \textbullet{} Jenkins CI \\
-Linux \textbullet{} Mesh Networking \textbullet{} MySQL \\
-PostgreSQL \textbullet{} Protocol Buffers \textbullet{} Redis \\
-Solaris \textbullet{} WebSockets \textbullet{} Windows
+AWS \textbullet{} Linux \textbullet{} Flask \\
+Django \textbullet{} Git \textbullet{} CI / CD \textbullet{} Ansible \\
+PostgreSQL \textbullet{} MySQL \textbullet{} Snowflake\\
+Redis \textbullet{} Mesh Networking \textbullet{} WebSockets
 
 \sectionspace % Some whitespace after the section
 
@@ -134,31 +143,52 @@ Solaris \textbullet{} WebSockets \textbullet{} Windows
 %
 \begin{minipage}[t]{0.66\textwidth} % The right column takes up 66% of the text width of the page
 
-%----------
-%Interests
-%----------
-
-\section{About}
-I am a software engineer specializing in writing efficient Python and Go for low-level embedded environments and scalable backend systems.
-I have experience with AWS, microservices, Internet of Things, wireless sensor networks, and green energy.\\[1em]
-I am happiest building things that other people enjoy using, especially when it aligns with my other hobbies.
-\sectionspace
-
 %------------------------------------------------
 % Experience
 %------------------------------------------------
 
 \section{Experience}
 
+\runsubsection{SPAN.IO}
+\descript{| Senior Data Engineer}
+
+\location{January 2022 - March 2024 | San Francisco, CA}
+Helped design and implement a new ETL system that's replaced one older system and in the process of replacing a second, separate system so that all ETL jobs happen in a single monitored environment. This delivered data to the Data Science, Sales, Manufacturing, and Customer Support teams. \\[1em]
+Created a data quality tracking system to feed DataDog with fleet-wide data completeness and lateness data and alert when anomalous statistics were encountered. This helped identify multiple data infrastructure issues that were missed by other systems.\\[1em]
+Researched and gathered requirements that helped design a major iteration in the IoT communication protocol. This inspired a transition away from representing measured data as floating-point values (E.G. 6.017 watts) to whole integer values (E.G. 6017 milliwatts). The research included calculating the real-world limitations of the measuring hardware, gathering product requirements for how the data is presented to the customer, and the requirements for how much accuracy is desired by internal teams (E.G. Data Science).
+\sectionspace
+
+Technology Used:\\
+\begin{tabular}{llll}
+AWS S3 & Lambda & IoT & EKS\\
+Athena & Snowflake & Terraform & Prefect\\
+\end{tabular}
+
+\sectionspace % Some whitespace after the section
+
+\runsubsection{Trace Genomics}
+\descript{| Senior Software Engineer}
+
+\location{September 2018 - December 2021 | Burlingame, CA}
+I designed, implemented, and maintained a metagenomics data processing pipeline. It is responsible for interpreting genetic sequences and turning it into actionable metrics for farmers and agronomists.\\[1em]
+The new pipeline was AWS SQS and Docker-based, replacing a slower and more expensive pipeline, reducing the costs to <\$1 per item processed. It could handle multi-terrabyte-large workloads without issue or supervision.
+\sectionspace
+
+Technology Used:\\
+\begin{tabular}{llll}
+AWS & Docker & SQS & S3\\
+ECS & Ansible & Flask & FASTQ\\
+Various Metagenomics Tools\\
+\end{tabular}
+
+\sectionspace % Some whitespace after the section
+
 \runsubsection{Ditto.com}
 \descript{| Backend Software Engineer}
 
-\location{January 2017 - Current | San Francisco, CA}
-I support and implement a cloud-based 3D-rendering and face-scanning service on AWS. The service provides "Virtual Try-Ons" to eyewear e-commerce businesses.\\[1em]
-My responsibilities include designing and implementing databases and APIs, diagnosing and improving performance, working with DevOps to deploy products at scale, creating internal and customer-facing tools, mentoring new employees, and participating in the on-call cycle.\\[1em]
-Recently I helped lead a team in designing the architecture and implementing a horizontally scalable, distributed image and video processing system on AWS.
-Some challenges were real-time scaling based upon current demand, reloading configuration without downtime, monitoring, synchronizing states between nodes, and formatting easily searchable logs.
-All components in the new system have been well documented and diagrammed to allow future and current developers to easily take part in any further development of the system.
+\location{January 2017 - September 2018 | San Francisco, CA}
+I supported and implemented a cloud-based 3D-rendering and face-scanning service on AWS. The service provides "Virtual Try-Ons" to eyewear e-commerce businesses.
+%My responsibilities include designing and implementing databases and APIs, diagnosing and improving performance, working with DevOps to deploy products at scale, creating internal and customer-facing tools, mentoring new employees, and participating in the on-call cycle.
 \sectionspace
 
 Technology Used:\\
@@ -171,27 +201,6 @@ Consul & OpenCV & Redis & Twisted\\
 \sectionspace % Some whitespace after the section
 
 %---------------------------------------------------
-
-\runsubsection{SolarCity}
-\descript{| Embedded Software Engineer}
-
-\location{September 2014 - August 2016 | San Mateo, CA}
-
-I maintained and added new features to a Python application that ran on small, Linux-powered, embedded devices.
-The application communicated to various power appliances in order to send power data samples back to a database and a real-time messaging system.
-It also controlled various settings on the appliance when commanded over the real-time messaging system.\\[1em]
-I also spearheaded the effort to get the Python application's build process off of developers' computers and into continuous integration with unit testing,
-as well as move away from using a SQL-based logging system to using a third-party log management stack.
-\sectionspace
-
-Technology Used:\\
-\begin{tabular}{llll}
-Cassandra & Git & MSSQL & TCP/IP\\
-ELK & Jenkins CI & RS-485 & WebSockets\\
-Flask & MODBUS & RabbitMQ & ZigBee (802.15.4)\\
-\end{tabular}
-
-\sectionspace % Some whitespace after the section
 
 %---------------------------------------------------
 
@@ -239,6 +248,31 @@ Flask & MODBUS & RabbitMQ & ZigBee (802.15.4)\\
 \begin{minipage}[t]{0.99\textwidth} % The right column takes up 66% of the text width of the page
 
 %------------------------------------------------
+% Experience
+%------------------------------------------------
+
+\section{Experience (Cont'd)}
+
+\runsubsection{SolarCity}
+\descript{| Embedded Software Engineer}
+
+\location{September 2014 - August 2016 | San Mateo, CA}
+
+I maintained and added new features to a Python application that ran on small, Linux-powered, embedded devices.
+The application communicated to various power appliances in order to send power data samples back to a database and a real-time messaging system.
+It also controlled various settings on the appliance when commanded over the real-time messaging system.
+\sectionspace
+
+Technology Used:\\
+\begin{tabular}{llll}
+Cassandra & Git & MSSQL & TCP/IP\\
+ELK & Jenkins CI & RS-485 & WebSockets\\
+Flask & MODBUS & RabbitMQ & ZigBee (802.15.4)\\
+\end{tabular}
+
+\sectionspace % Some whitespace after the section
+
+%------------------------------------------------
 % Projects
 %------------------------------------------------
 
@@ -247,7 +281,7 @@ Flask & MODBUS & RabbitMQ & ZigBee (802.15.4)\\
 \runsubsection{Dr. Wattson}
 \descript{| Senior Capstone Project (Award-Winning)}
 
-\location{Fall 2013 - Spring 2014 | \href{http://goo.gl/PqPYvQ}{http://goo.gl/PqPYvQ}}
+\location{Fall 2013 - Spring 2014 | \href{https://blogs.oregonstate.edu/eecsnews/2014/05/12/two-osu-teams-shine-national-intel-competition/}{University Article Link} | \href{https://youtu.be/jwQDxKGRMwA}{Expo Video}}
 Designed and built a mesh network of power monitors to measure home power usage patterns and help people conserve energy.
 
 \sectionspace % Some whitespace after the section
@@ -268,8 +302,18 @@ The purpose is to simplify the manipulation of physical quantities and ensure in
 \runsubsection{Cause and Affect Microdonations}
 \descript{| Easy Socal Non-Profit Donations}
 
-\location{March 2017 | \href{https://causeandaffect.net/}{https://causeandaffect.net/}}
+\location{March 2017}
 A donation platform built on AWS to facilitate non-profit fundraising within the Twitch livestreaming ecosystem.
+
+\sectionspace % Some whitespace after the section
+
+%------------------------------------------------
+
+\runsubsection{Camera Film Price Tracker}
+\descript{| A Film Price Data Monitoring System}
+
+\location{2024 | \href{https://botsin.space/@filmpricedrop}{Mastodon Feed}}
+A full-stack system that uses Prefect ETL to gather the price of film from multiple storefronts across the internet, feed that data into a timeseries database, then query that information for any changes, and automatically notify multiple hobbyist groups about any decrease in price.
 
 \sectionspace % Some whitespace after the section
 
